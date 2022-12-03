@@ -1,0 +1,564 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ScrollView
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:elevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.0">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="visible">
+
+            <Button
+                android:id="@+id/btnStartDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="190dp"
+                android:text="Start Day"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.454"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView3" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="373dp"
+                android:layout_height="314dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="70dp"
+                android:layout_marginEnd="50dp"
+                android:elevation="50dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <TextView
+                        android:id="@+id/textView20"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="145dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginEnd="145dp"
+                        android:text="TODAY COST"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtJumlahStok"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="72dp"
+                        android:text="0"
+                        android:textColor="#000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtHargaModal"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="269dp"
+                        android:text="10.000"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtJumlahStok3"
+                        app:layout_constraintTop_toBottomOf="@+id/txtJumlahStok2" />
+
+                    <TextView
+                        android:id="@+id/txtJumlahStok2"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="72dp"
+                        android:layout_marginEnd="163dp"
+                        android:text="Cup Of Coffe"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toStartOf="@+id/txtTotalHargaCoffe"
+                        app:layout_constraintStart_toEndOf="@+id/txtJumlahStok"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtTotalHargaCoffe"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="72dp"
+                        android:layout_marginEnd="45dp"
+                        android:text="200.000"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/txtHargaRent"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="174dp"
+                        android:layout_marginTop="45dp"
+                        android:layout_marginEnd="45dp"
+                        android:text="200.000"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txtJumlahStok5"
+                        app:layout_constraintTop_toBottomOf="@+id/txtTotalHargaCoffe" />
+
+                    <TextView
+                        android:id="@+id/txtTotalModalKeseluruhan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="218dp"
+                        android:layout_marginTop="50dp"
+                        android:layout_marginEnd="45dp"
+                        android:text="200.000"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/txt"
+                        app:layout_constraintTop_toBottomOf="@+id/txtHargaRent" />
+
+                    <TextView
+                        android:id="@+id/txtJumlahStok5"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="19dp"
+                        android:text="Location Rent"
+                        android:textColor="#000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtHargaModal" />
+
+                    <TextView
+                        android:id="@+id/txtTempatJualan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="7dp"
+                        android:text="Tempat"
+                        android:textColor="#000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtJumlahStok5" />
+
+                    <TextView
+                        android:id="@+id/txt"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="27dp"
+                        android:layout_marginBottom="86dp"
+                        android:text="TOTAL"
+                        android:textColor="#000000"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtTempatJualan" />
+
+                    <TextView
+                        android:id="@+id/txtJumlahStok3"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="6dp"
+                        android:text="'@IDR"
+                        android:textColor="#000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtJumlahStok" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txt1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="3dp"
+                android:text="Balance"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+            <TextView
+                android:id="@+id/txtNama"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="18dp"
+                android:layout_marginEnd="296dp"
+                android:text="Nama"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/textView3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="14dp"
+                android:layout_marginTop="18dp"
+                android:text="Welcome"
+                android:textColor="#000000"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView"
+                android:layout_width="373dp"
+                android:layout_height="370dp"
+                android:layout_marginStart="38dp"
+                android:layout_marginTop="26dp"
+                android:layout_marginEnd="38dp"
+                android:elevation="50dp"
+                app:cardBackgroundColor="#FBFBFB"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtCuaca">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    tools:layout_editor_absoluteX="-4dp"
+                    tools:layout_editor_absoluteY="-16dp">
+
+                    <TextView
+                        android:id="@+id/textView10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="161dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="162dp"
+                        android:text="Recipes"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="27dp"
+                        android:layout_marginTop="58dp"
+                        android:text="Coffe"
+                        android:textColor="#000000"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="110dp"
+                        android:layout_marginTop="23dp"
+                        android:layout_marginEnd="108dp"
+                        android:text="Milk"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toStartOf="@+id/textView13"
+                        app:layout_constraintStart_toEndOf="@+id/textView11"
+                        app:layout_constraintTop_toBottomOf="@+id/textView10" />
+
+                    <TextView
+                        android:id="@+id/textView13"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="58dp"
+                        android:layout_marginEnd="29dp"
+                        android:text="Water"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <Button
+                        android:id="@+id/btnUpCoffe"
+                        android:layout_width="42dp"
+                        android:layout_height="29dp"
+                        android:layout_marginStart="27dp"
+                        android:layout_marginTop="8dp"
+                        android:background="@android:drawable/arrow_up_float"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView11" />
+
+                    <Button
+                        android:id="@+id/btnDownCoffe"
+                        android:layout_width="42dp"
+                        android:layout_height="29dp"
+                        android:layout_marginStart="27dp"
+                        android:layout_marginTop="7dp"
+                        android:background="@android:drawable/arrow_down_float"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtCoffe" />
+
+                    <Button
+                        android:id="@+id/btnDownMilk"
+                        android:layout_width="42dp"
+                        android:layout_height="29dp"
+                        android:layout_marginStart="96dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="101dp"
+                        android:background="@android:drawable/arrow_down_float"
+                        app:layout_constraintEnd_toStartOf="@+id/btnDownWater"
+                        app:layout_constraintStart_toEndOf="@+id/btnDownCoffe"
+                        app:layout_constraintTop_toBottomOf="@+id/txtMilk" />
+
+                    <Button
+                        android:id="@+id/btnDownWater"
+                        android:layout_width="42dp"
+                        android:layout_height="29dp"
+                        android:layout_marginTop="7dp"
+                        android:layout_marginEnd="23dp"
+                        android:background="@android:drawable/arrow_down_float"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtWater" />
+
+                    <Button
+                        android:id="@+id/btnUpMilk"
+                        android:layout_width="42dp"
+                        android:layout_height="29dp"
+                        android:layout_marginStart="95dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="100dp"
+                        android:background="@android:drawable/arrow_up_float"
+                        app:layout_constraintEnd_toStartOf="@+id/btnUpWater"
+                        app:layout_constraintStart_toEndOf="@+id/btnUpCoffe"
+                        app:layout_constraintTop_toBottomOf="@+id/textView12" />
+
+                    <Button
+                        android:id="@+id/btnUpWater"
+                        android:layout_width="42dp"
+                        android:layout_height="29dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="24dp"
+                        android:background="@android:drawable/arrow_up_float"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView13" />
+
+                    <EditText
+                        android:id="@+id/txtCoffe"
+                        android:layout_width="43dp"
+                        android:layout_height="39dp"
+                        android:layout_marginStart="27dp"
+                        android:layout_marginTop="8dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnUpCoffe" />
+
+                    <EditText
+                        android:id="@+id/txtMilk"
+                        android:layout_width="43dp"
+                        android:layout_height="39dp"
+                        android:layout_marginStart="93dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="100dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        app:layout_constraintEnd_toStartOf="@+id/txtWater"
+                        app:layout_constraintStart_toEndOf="@+id/txtCoffe"
+                        app:layout_constraintTop_toBottomOf="@+id/btnUpMilk" />
+
+                    <EditText
+                        android:id="@+id/txtWater"
+                        android:layout_width="43dp"
+                        android:layout_height="39dp"
+                        android:layout_marginTop="8dp"
+                        android:layout_marginEnd="23dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnUpWater" />
+
+                    <TextView
+                        android:id="@+id/txtHargaPcs"
+                        android:layout_width="51dp"
+                        android:layout_height="16dp"
+                        android:layout_marginStart="9dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginEnd="115dp"
+                        android:text="IDR 10.000"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        android:textStyle="bold"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/textView14"
+                        app:layout_constraintTop_toBottomOf="@+id/btnDownMilk" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="93dp"
+                        android:layout_marginTop="11dp"
+                        android:text="Cost Per Cup of Coffe is"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/btnDownMilk" />
+
+                    <TextView
+                        android:id="@+id/textView18"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="151dp"
+                        android:layout_marginTop="12dp"
+                        android:layout_marginEnd="152dp"
+                        android:text="Set Selling Price"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtJumlahStokAwal" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="93dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="117dp"
+                        android:text="How Many Coffe do You want to sell?"
+                        android:textColor="#000000"
+                        android:textSize="10sp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/txtHargaPcs" />
+
+                    <EditText
+                        android:id="@+id/txtJumlahStokAwal"
+                        android:layout_width="110dp"
+                        android:layout_height="39dp"
+                        android:layout_marginStart="126dp"
+                        android:layout_marginTop="9dp"
+                        android:layout_marginEnd="137dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView17" />
+
+                    <EditText
+                        android:id="@+id/txtHargaJual"
+                        android:layout_width="110dp"
+                        android:layout_height="39dp"
+                        android:layout_marginStart="126dp"
+                        android:layout_marginEnd="137dp"
+                        android:ems="10"
+                        android:inputType="number"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView18" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView2"
+                android:layout_width="373dp"
+                android:layout_height="150dp"
+                android:layout_marginStart="50dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="50dp"
+                android:elevation="50dp"
+                app:cardBackgroundColor="#FFFFFF"
+                app:cardCornerRadius="25dp"
+                app:cardElevation="25dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/cardView">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Spinner
+                        android:id="@+id/spinnerLocation"
+                        android:layout_width="357dp"
+                        android:layout_height="44dp"
+                        android:layout_marginStart="8dp"
+                        android:layout_marginTop="25dp"
+                        android:layout_marginEnd="8dp"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toBottomOf="@+id/textView19" />
+
+                    <TextView
+                        android:id="@+id/textView19"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="159dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="160dp"
+                        android:text="Location"
+                        android:textColor="#000000"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/txtBalance"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="3dp"
+                android:layout_marginEnd="261dp"
+                android:text="IDR.100.000"
+                android:textColor="#000000"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtNama" />
+
+            <TextView
+                android:id="@+id/txtDay"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="176dp"
+                android:layout_marginTop="88dp"
+                android:layout_marginEnd="177dp"
+                android:text="Day 1"
+                android:textColor="#000000"
+                android:textSize="48sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/txtCuaca"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="202dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="203dp"
+                android:text="Cuaca"
+                android:textColor="#000000"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/txtDay" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
